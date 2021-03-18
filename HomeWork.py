@@ -9,9 +9,6 @@ def triangle_area(h, b):
 def circle_area(r):
     return 2*pi*r
 
-def cylinder_volume(h, r):
-    return (2*pi*r)*(h+r)
-
 height = int(input("Enter height of triangle: "))
 base = int(input("Enter base length of triangle: "))
 area_triangle = triangle_area(height, base)
@@ -24,8 +21,3 @@ print(f"Area of square is: {area_square}")
 radius = int(input("Enter radius of circle: "))
 area_circle = circle_area(radius)
 print(f"Area of circle is: {area_circle}")
-
-radius_cylinder = int(input("Enter radius of cylinder: "))
-height_cylinder = int(input("Enter height of cylinder: "))
-area_cylinder = cylinder_volume(height_cylinder, radius_cylinder)
-print(f"Volume of cylinder is: {radius_cylinder}")
