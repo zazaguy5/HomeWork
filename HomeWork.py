@@ -15,6 +15,9 @@ def cylinder_volume(h, r):
 def circle_volume(r):
     return 4/3*(pi*r*r*r)
 
+def cubic_volume(h, l, w):
+    return h*l*w
+
 height = int(input("Enter height of triangle: "))
 base = int(input("Enter base length of triangle: "))
 area_triangle = triangle_area(height, base)
@@ -36,3 +39,9 @@ print(f"Volume of cylinder is: {radius_cylinder}")
 radius_circle_volume = int(input("Enter raduis of circle: "))
 area_volume = circle_volume(radius_circle_volume)
 print(f"Volume of cicle is: {area_volume}")
+
+cubic_height = int(input("Enter height of cubic: "))
+cubic_lenght = int(input("Enter length of cubic: "))
+cubic_wide = int(input("Enter wide of cubic: "))
+volume_cubic = cubic_volume(cubic_height, cubic_lenght, cubic_wide)
+print(f"Volume of cubic is: {volume_cubic}")
